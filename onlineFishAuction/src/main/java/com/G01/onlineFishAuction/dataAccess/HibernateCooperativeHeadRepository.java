@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.G01.onlineFishAuction.entities.CooperativeHead;
 @Repository
 public class HibernateCooperativeHeadRepository implements ICooperativeHeadRepository{
-	private EntityManager entityManager;
+private EntityManager entityManager;
 	
 	@Autowired
 	public HibernateCooperativeHeadRepository(EntityManager entityManager) {

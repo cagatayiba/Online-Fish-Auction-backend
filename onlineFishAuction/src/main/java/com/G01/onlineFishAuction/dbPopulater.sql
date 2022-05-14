@@ -37,6 +37,17 @@ CREATE TABLE fisherman
     owner    VARCHAR(255) NOT NULL,
     PRIMARY KEY (username)
 );
+CREATE TABLE Code(
+    member_code VARCHAR(255) NOT NULL,
+    PRIMARY KEY (member_code)
+);
+CREATE TABLE Auction(
+    date FLOAT,
+    name VARCHAR(255),
+    id VARCHAR(255),
+    quota INT,
+    PRIMARY KEY (id)
+);
 INSERT INTO Customer
 VALUES ("Iyte Bilgisayar", "canrollas@gmail.com", "canrollas", "Can", "Rollas", "123can123");
 INSERT INTO Customer
@@ -49,3 +60,5 @@ INSERT INTO fisherman
 VALUES ("randomFm@gmail.com", "Ali_Kaptan", "random_psw_567", "11111111111111111111111111", "ali kuscu");
 INSERT INTO cooperativeHead
 VALUES ("admin@gmail.com", "Admin", "lorem_ipsum");
+INSERT INTO Auction
+VALUES(1,"test", "1", 100)
